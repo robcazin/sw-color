@@ -1,11 +1,9 @@
-document.getElementById('applyColor').addEventListener('click', async () => {
+document.getElementById('swColorName').addEventListener('input', async () => {
     const colorName = document.getElementById('swColorName').value.trim();
     if (colorName) {
         const color = await fetchColor(colorName);
         if (color) {
             applyColor(color.hex);
-        } else {
-            alert('Color not found');
         }
     }
 });
