@@ -16,6 +16,8 @@
                 <div class="mb-4">
                     <label class="block text-gray-700 font-bold mb-2" for="swColorName">Sherwin-Williams Color Name</label>
                     <input id="swColorName" type="text" class="w-full h-10 border rounded p-2 mb-2" placeholder="Enter SW color name (e.g., SW6243 Distance)">
+                    <div id="loading" class="hidden">Loading...</div>
+                    <div id="error" class="hidden text-red-500"></div>
                 </div>
             </div>
             <div class="bg-white p-4 rounded shadow">
@@ -26,6 +28,7 @@
             </div>
         </div>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuzzball/2.1.0/fuzzball.min.js"></script>
     <script src="app.js"></script>
 </body>
 </html>
